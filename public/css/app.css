@@ -6167,6 +6167,26 @@ img {
   margin-left: 5px;
 }
 
+.btn-footer {
+  background: transparent;
+  display: inline-block;
+  border: 2px solid #00a9d9;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  width: 150px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  transition-timing-function: ease;
+}
+.btn-footer:hover {
+  background: #00a9d9;
+}
+
 header .header-top {
   background-color: #00a9d9;
   color: #fff;
@@ -6264,6 +6284,7 @@ main {
 
 footer {
   background-image: url("/images/footer-bg.jpg");
+  color: #959595;
 }
 footer .footer-top {
   background: transparent url("/images/dc-logo-bg.png") no-repeat right;
@@ -6276,6 +6297,7 @@ footer .footer-top .container .footer-menu .submenu li {
 }
 footer .footer-btm {
   background-color: #303030;
+  padding: 30px;
 }
 footer .footer-btm .container {
   display: flex;
@@ -6283,9 +6305,18 @@ footer .footer-btm .container {
   justify-content: space-between;
   align-items: center;
 }
-footer .footer-btm .container .sign-up {
-  background-color: orange;
+footer .footer-btm .container .social .social-title {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  color: #00a9d9;
+  text-transform: uppercase;
+  line-height: 50px;
 }
-footer .footer-btm .container .social {
-  background-color: orange;
+footer .footer-btm .container .social ul li {
+  vertical-align: middle;
+  margin-left: 20px;
+}
+footer .footer-btm .container .social ul li a:hover {
+  opacity: 0.8;
 }

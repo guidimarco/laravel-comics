@@ -114,36 +114,36 @@
         <div class="container">
             <!-- sx: btn sign-up -->
             <div class="sign-up">
-                <a href="#">Sign up now</a>
+                <a href="#" class="btn btn-footer">Sign up now</a>
             </div>
 
             <!-- dx: social -->
             <div class="social">
                 <ul>
-                    <li>follow us</li>
+                    <li class="social-title">follow us</li>
                     <li>
                         <a href="#">
-                            f
+                            <img src="/images/footer-facebook.png" alt="social icon facebook">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            t
+                            <img src="/images/footer-twitter.png" alt="social icon twitter">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            y
+                            <img src="/images/footer-youtube.png" alt="social icon youtube">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            p
+                            <img src="/images/footer-pinterest.png" alt="social icon pinterest">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            pe
+                            <img src="/images/footer-periscope.png" alt="social icon periscope">
                         </a>
                     </li>
                 </ul>

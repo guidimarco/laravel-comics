@@ -1,5 +1,6 @@
 footer {
     background-image: url("/images/footer-bg.jpg");
+    color: $footerCol;
 
     // top: footer-menu
     .footer-top {
@@ -27,16 +28,33 @@ footer {
     // btm: social && sign-up
     .footer-btm {
         background-color: $footerBG;
+        padding: $spacing * 3;
 
         .container {
             @include flex(row, space-between, center);
 
             .sign-up {
-                background-color: orange;
+
             }
 
             .social {
-                background-color: orange;
+                .social-title {
+                    font-family: $fontFamilyCond;
+                    font-weight: bold;
+                    font-size: $fontSize * 2.1;
+                    color: $brandPr;
+                    text-transform: uppercase;
+                    line-height: 50px;
+                }
+                ul {
+                    li {
+                        vertical-align: middle;
+                        margin-left: $spacing * 2;
+                        a:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
             }
         }
     } // end footer-btm
