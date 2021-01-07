@@ -6340,6 +6340,33 @@ main #series .comics-container .comics-card h3 {
 main #series .btn-container {
   text-align: center;
 }
+main #info-nav {
+  background-color: #00a9d9;
+  color: #fff;
+}
+main #info-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+main #info-nav ul li {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main #info-nav ul li img {
+  height: 55px;
+  width: 55px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  vertical-align: middle;
+}
+main #info-nav ul li span {
+  display: inline-block;
+  line-height: 55px;
+}
 
 footer {
   background-image: url("/images/footer-bg.jpg");

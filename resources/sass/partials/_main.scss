@@ -50,4 +50,29 @@ main {
             text-align: center;
         }
     }
+
+    #info-nav {
+        background-color: $brandPr;
+        color: $brandPrCol;
+
+        ul {
+            @include flex(row, space-between, center);
+            padding: $spacing * 5 0;
+            li {
+                font-size: $fontSize * 1.4;
+                font-weight: bold;
+                text-transform: uppercase;
+                img {
+                    height: 55px; width: 55px;
+                    object-fit: contain;
+                    vertical-align: middle;
+                }
+                span {
+                    display: inline-block;
+                    line-height: 55px;
+                    // vertical-align: middle;
+                }
+            }
+        }
+    }
 } // end main
