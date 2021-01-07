@@ -1,33 +1,87 @@
 header {
     .header-top {
+        background-color: $brandPr;
+        color: $brandPrCol;
+        font-size: $fontSize *1.3;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: $spacing / 2 0;
+
         .container {
             @include clearfix;
             ul {
                 float: right;
                 li {
-
+                    margin-left: $spacing * 6;
                 }
             }
         }
-    }
+    } // end header-top
 
     .header-btm {
+        height: $headerH;
+        border-bottom: 1px solid #ebebeb;
+        background-color: $primaryBg;
+        font-weight: bold;
+
         .container {
+            height: 100%;
             @include flex(row, space-between, center);
+
             .logo {
-                height: 200px; width: 200px;
-                background-color: red;
+                img {
+                    max-width: 80px;
+                }
             }
 
             .header-menu {
-                height: 200px; width: 200px;
-                background-color: red;
+                font-family: $fontFamilyCond;
+                color: $primaryCol;
+                text-transform: uppercase;
+                font-size: $fontSize * 1.6;
+
+                ul {
+                    li {
+                        height: $headerH;
+                        display: inline-flex;
+                        align-items: center;
+                        margin: 0 $spacing * 3 / 2;
+                        border-bottom: 3px solid transparent;
+                        &:hover {
+                            border-bottom: 3px solid $brandPr;
+                        }
+                        a {
+                            &:hover {
+                                color: $brandPr;
+                            }
+                        }
+                    }
+                }
             }
 
             .search {
-                height: 200px; width: 200px;
-                background-color: red;
+                border-bottom: 2px solid $brandPr;
+                width: 110px;
+
+                input {
+                    border: 0;
+                    color: #000;
+                    font-family: $fontFamilyCond;
+                    font-size: $fontSize * 1.6;
+                    margin-right: $spacing / 5;
+                    outline: none;
+                    padding-left: $spacing;
+                    text-align: right;
+                    vertical-align: middle;
+                    width: 90px;
+                    &::placeholder {
+                        color: #000;
+                        font-family: $fontFamilyCond;
+                        font-size: $fontSize * 1.6;
+                        font-weight: bold;
+                    }
+                }
             }
         }
-    }
+    } // end header-btm
 } // fine header

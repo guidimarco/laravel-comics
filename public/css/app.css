@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -27,6 +27,19 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
+header .header-top {
+  background-color: #00a9d9;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
 header .header-top .container {
   display: table;
   clear: both;
@@ -37,28 +50,88 @@ header .header-top .container ul {
   float: right;
 }
 
+header .header-top .container ul li {
+  margin-left: 60px;
+}
+
+header .header-btm {
+  height: 115px;
+  border-bottom: 1px solid #ebebeb;
+  background-color: #fff;
+  font-weight: bold;
+}
+
 header .header-btm .container {
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-header .header-btm .container .logo {
-  height: 200px;
-  width: 200px;
-  background-color: red;
+header .header-btm .container .logo img {
+  max-width: 80px;
 }
 
 header .header-btm .container .header-menu {
-  height: 200px;
-  width: 200px;
-  background-color: red;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #464646;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header .header-btm .container .header-menu ul li {
+  height: 115px;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 15px;
+  border-bottom: 3px solid transparent;
+}
+
+header .header-btm .container .header-menu ul li:hover {
+  border-bottom: 3px solid #00a9d9;
+}
+
+header .header-btm .container .header-menu ul li a:hover {
+  color: #00a9d9;
 }
 
 header .header-btm .container .search {
-  height: 200px;
-  width: 200px;
-  background-color: red;
+  border-bottom: 2px solid #00a9d9;
+  width: 110px;
+}
+
+header .header-btm .container .search input {
+  border: 0;
+  color: #000;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  margin-right: 2px;
+  outline: none;
+  padding-left: 10px;
+  text-align: right;
+  vertical-align: middle;
+  width: 90px;
+}
+
+header .header-btm .container .search input::-moz-placeholder {
+  color: #000;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header .header-btm .container .search input:-ms-input-placeholder {
+  color: #000;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header .header-btm .container .search input::placeholder {
+  color: #000;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
 
