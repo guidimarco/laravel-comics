@@ -1,0 +1,33 @@
+header {
+    .header-top {
+        .container {
+            @include clearfix;
+            ul {
+                float: right;
+                li {
+
+                }
+            }
+        }
+    }
+
+    .header-btm {
+        .container {
+            @include flex(row, space-between, center);
+            .logo {
+                height: 200px; width: 200px;
+                background-color: red;
+            }
+
+            .header-menu {
+                height: 200px; width: 200px;
+                background-color: red;
+            }
+
+            .search {
+                height: 200px; width: 200px;
+                background-color: red;
+            }
+        }
+    }
+} // fine header

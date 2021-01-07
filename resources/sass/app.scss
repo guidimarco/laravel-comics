@@ -1,6 +1,11 @@
-//
+// var and mixin
+@import 'partials/variables';
+@import 'partials/mixin';
 
-header {
-    height: 200px;
-    background-color: red;
-}
+// common html style
+@import 'partials/common';
+
+// html
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/footer';

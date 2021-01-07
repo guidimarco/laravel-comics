@@ -1,0 +1,27 @@
+// font
+$fontFamily: sans-serif;
+$fontSize: 14px;
+
+// spacing
+$spacing: 12px;
+$gutter: 5px; // see _12col.scss
+
+// color
+$brandPr: #fff;
+$textPr: #989898;
+$titlePr: #001942;
+
+$schedaProdotto: #b7dae5;
+
+// btn
+$btnPr: rgba(0, 0, 0, 0.3);
+$btnHover: #252525;
+$btnPrText: #fff;
+
+$btnSec: rgba(255, 255, 255, 0.85);
+
+// HTML
+
+// media-query-list: "media-query-name" + m-q-min-width + container-max-width
+$xs-min: 0px; $sm-min: 576px; $md-min: 768px; $lg-min: 992px; $xl-min: 1200px;
+$mediaQuery: ("xs" $xs-min 560px, "sm" $sm-min 540px, "md" $md-min 720px, "lg" $lg-min 960px, "xl" $xl-min 1140px);
