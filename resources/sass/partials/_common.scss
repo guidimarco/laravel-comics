@@ -30,3 +30,10 @@ a {
 img {
     max-width: 100%;
 }
+
+.dropdown::after {
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    margin-left: $spacing / 2;
+}

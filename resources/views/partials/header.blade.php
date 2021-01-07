@@ -7,7 +7,7 @@
                     <a href="#">DC Power&#8480; Visa&reg;</a>
                 </li>
                 <li>
-                    <a href="#">Additional DC sites</a>
+                    <a href="#" class="dropdown">Additional DC sites</a>
                 </li>
             </ul>
         </div>
@@ -52,7 +52,7 @@
                         <a href="#">news</a>
                     </li>
                     <li>
-                        <a href="#">shop</a>
+                        <a href="#" class="dropdown">shop</a>
                     </li>
                 </ul>
             </nav>
@@ -60,6 +60,7 @@
             <!-- dx: search button -->
             <div class="search">
                 <input type="search" name="header-search" value="" placeholder="Search">
+                <i class="fas fa-search"></i>
             </div>
         </div>
     </header>
