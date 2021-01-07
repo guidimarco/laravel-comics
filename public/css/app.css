@@ -6256,3 +6256,36 @@ header .header-btm .container .search input::placeholder {
   font-size: 16px;
   font-weight: bold;
 }
+
+main {
+  min-height: 100vh;
+  background-color: green;
+}
+
+footer {
+  background-image: url("/images/footer-bg.jpg");
+}
+footer .footer-top {
+  background: transparent url("/images/dc-logo-bg.png") no-repeat right;
+}
+footer .footer-top .container .footer-menu .submenu-item {
+  vertical-align: top;
+}
+footer .footer-top .container .footer-menu .submenu li {
+  display: block;
+}
+footer .footer-btm {
+  background-color: #303030;
+}
+footer .footer-btm .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-btm .container .sign-up {
+  background-color: orange;
+}
+footer .footer-btm .container .social {
+  background-color: orange;
+}

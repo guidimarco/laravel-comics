@@ -1,3 +1,43 @@
 footer {
-    
+    background-image: url("/images/footer-bg.jpg");
+
+    // top: footer-menu
+    .footer-top {
+        background: transparent url("/images/dc-logo-bg.png") no-repeat right;
+
+        .container {
+            .footer-menu {
+                .submenu-item {
+                    vertical-align: top;
+                }
+
+                .submenu {
+                    li {
+                        display: block;
+                    }
+                }
+            }
+
+            .copy {
+
+            }
+        }
+    } // end footer-top
+
+    // btm: social && sign-up
+    .footer-btm {
+        background-color: $footerBG;
+
+        .container {
+            @include flex(row, space-between, center);
+
+            .sign-up {
+                background-color: orange;
+            }
+
+            .social {
+                background-color: orange;
+            }
+        }
+    } // end footer-btm
 }

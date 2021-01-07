@@ -18,7 +18,9 @@
         <div class="container">
             <!-- sx: logo -->
             <div class="logo">
-                <img src="{{ asset("images/dc-logo.png") }}" alt="brand logo dc">
+                <a href="{{ route("home") }}">
+                    <img src="{{ asset("images/dc-logo.png") }}" alt="brand logo dc">
+                </a>
             </div>
 
             <!-- nav-menu -->
