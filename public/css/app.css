@@ -6286,14 +6286,41 @@ footer {
   background-image: url("/images/footer-bg.jpg");
   color: #959595;
 }
+footer h2 {
+  font-size: 22px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Open Sans Condensed", sans-serif;
+  margin-bottom: 10px;
+}
+footer h2.subtitle {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 19px;
+}
 footer .footer-top {
   background: transparent url("/images/dc-logo-bg.png") no-repeat right;
+  font-size: 12px;
+  padding: 40px;
+}
+footer .footer-top a:hover {
+  color: #00a9d9;
 }
 footer .footer-top .container .footer-menu .submenu-item {
   vertical-align: top;
+  padding-right: 40px;
 }
 footer .footer-top .container .footer-menu .submenu li {
   display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+footer .footer-top .container .copy {
+  padding-top: 20px;
+}
+footer .footer-top .container .copy a {
+  color: #00a9d9;
 }
 footer .footer-btm {
   background-color: #303030;

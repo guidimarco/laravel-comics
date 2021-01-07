@@ -2,25 +2,52 @@ footer {
     background-image: url("/images/footer-bg.jpg");
     color: $footerCol;
 
+    h2 {
+        font-size: $fontSize * 2.2;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        color: $btnPrText;
+        font-family: $fontFamilyCond;
+        margin-bottom: $spacing;
+
+        &.subtitle {
+            margin-bottom: $spacing;
+            margin-top: $spacing * 2;
+            font-size: $fontSize * 1.9;
+        }
+    }
+
     // top: footer-menu
     .footer-top {
         background: transparent url("/images/dc-logo-bg.png") no-repeat right;
+        font-size: $fontSize * 1.2;
+        padding: $spacing * 4;
+
+        a:hover {
+            color: $brandPr;
+        }
 
         .container {
             .footer-menu {
                 .submenu-item {
                     vertical-align: top;
+                    padding-right: $spacing * 4;
                 }
 
                 .submenu {
                     li {
                         display: block;
+                        font-weight: bold;
+                        margin-bottom: $spacing / 2;
                     }
                 }
             }
 
             .copy {
-
+                padding-top: $spacing * 2;
+                a {
+                    color: $brandPr;
+                }
             }
         }
     } // end footer-top

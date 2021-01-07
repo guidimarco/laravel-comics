@@ -30,7 +30,7 @@
                                 <a href="#">News</a>
                             </li>
                             <li>
-                                <h2>Shop</h2>
+                                <h2 class="subtitle">Shop</h2>
                                 <ul>
                                     <li>
                                         <a href="#">Shop DC</a>
@@ -102,9 +102,9 @@
 
             <!-- btm: copy -->
             <div class="copy">
-                <p>All Site Content TM and © 2020 DC Entertainment, unless otherwise noted here. All rights reserved. </p>
+                <p>All Site Content TM and © 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved. </p>
 
-                <p>Cookie Settings</p>
+                <p><a href="#">Cookie Settings</a></p>
             </div>
         </div>
     </div>
