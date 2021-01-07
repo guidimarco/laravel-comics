@@ -6140,7 +6140,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1170px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -6167,9 +6167,12 @@ img {
   margin-left: 5px;
 }
 
+.btn {
+  display: inline-block;
+}
+
 .btn-footer {
   background: transparent;
-  display: inline-block;
   border: 2px solid #00a9d9;
   color: #fff;
   font-size: 16px;
@@ -6185,6 +6188,16 @@ img {
 }
 .btn-footer:hover {
   background: #00a9d9;
+}
+
+.btn-primary {
+  background-color: #00a9d9;
+  color: #fff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-top: 20px;
 }
 
 header .header-top {
@@ -6279,7 +6292,53 @@ header .header-btm .container .search input::placeholder {
 
 main {
   min-height: 100vh;
-  background-color: green;
+}
+main #jumbotron {
+  height: 300px;
+  background-image: url("/images/jumbotron.jpg");
+  background-size: cover;
+}
+main #series {
+  background-color: #1C1C1C;
+  color: #fff;
+  padding-bottom: 40px;
+}
+main #series .container h1 {
+  display: inline-block;
+  color: #fff;
+  background-color: #00a9d9;
+  transform: translate(-30px, -50%);
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+main #series .comics-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+main #series .comics-container .comics-card {
+  padding: 10px;
+}
+main #series .comics-container .comics-card img {
+  width: 180px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+main #series .comics-container .comics-card h3 {
+  width: 180px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+main #series .btn-container {
+  text-align: center;
 }
 
 footer {

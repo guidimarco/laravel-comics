@@ -10,7 +10,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1170px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -38,9 +38,11 @@ img {
     margin-left: $spacing / 2;
 }
 
+.btn {
+    display: inline-block;
+}
 .btn-footer {
     background: transparent;
-    display: inline-block;
     border: 2px solid $brandPr;
     color: $brandPrCol;
     font-size: $fontSize * 1.6;
@@ -56,4 +58,13 @@ img {
     &:hover {
         background: $brandPr;
     }
+}
+.btn-primary {
+    background-color: $brandPr;
+    color: $brandPrCol;
+    font-family: $fontFamilyCond;
+    font-size: $fontSize * 1.6;
+    padding: $spacing;
+    text-transform: uppercase;
+    margin-top: $spacing * 2;
 }
