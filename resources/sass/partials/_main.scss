@@ -77,6 +77,12 @@ main {
     }
 
     #comics {
+        h1 {
+            line-height: 1.3em;
+            font-family: $fontFamilyCond;
+            color: $primaryTitCol;
+            text-transform: uppercase;
+        }
         // top: cover-img
         .cover {
             height: 100px;
@@ -125,20 +131,40 @@ main {
                     // price bar
                     .comics-price {
                         @include flexbox;
+                        background: $priceBG;
+                        border-bottom: 1px solid $priceBorCol;
+                        color: $priceCol;
+                        font-weight: bold;
+                        font-size: $fontSize * 1.5;
+
                         .price {
                             @include flexbox(row, space-between);
                             flex-grow: 1;
+                            padding: $spacing * 1.7 $spacing * 2.5 $spacing * 1.3;
 
                             span {
                                 display: inline-block;
+                                &:nth-child(2) {
+                                    text-transform: uppercase;
+                                    color: #bafd9c;
+                                }
                             }
                         }
                         .availability {
-
+                            border-left: 1px solid $priceBorCol;
+                            display: block;
+                            padding: $spacing * 1.7 $spacing * 2.5 $spacing * 1.3;
                         }
                     }
 
                     // btm: description
+                    p {
+                        font-size: $fontSize * 1.4;
+                        font-weight: bold;
+                        line-height: $fontSize * 2.3;
+                        padding-top: $spacing * 1.2;
+                        color: #555;
+                    }
 
                 } // end comics info
 

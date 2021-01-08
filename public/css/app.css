@@ -6166,6 +6166,14 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  font-size: 37px;
+  font-weight: 300;
+  padding: 0 0 0.5em;
+  margin: 0;
+  line-height: 1.2em;
+}
+
 .dropdown::after {
   content: "\F0D7";
   font-family: "Font Awesome 5 Free";
@@ -6373,6 +6381,12 @@ main #info-nav ul li span {
   display: inline-block;
   line-height: 55px;
 }
+main #comics h1 {
+  line-height: 1.3em;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #003f5e;
+  text-transform: uppercase;
+}
 main #comics .cover {
   height: 100px;
   background-color: #00a9d9;
@@ -6418,6 +6432,11 @@ main #comics .info .comics-info-top .comics-info .comics-price {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  background: #55ba59;
+  border-bottom: 1px solid #357739;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
 }
 main #comics .info .comics-info-top .comics-info .comics-price .price {
   display: flex;
@@ -6426,9 +6445,26 @@ main #comics .info .comics-info-top .comics-info .comics-price .price {
   align-items: center;
   flex-wrap: nowrap;
   flex-grow: 1;
+  padding: 17px 25px 13px;
 }
 main #comics .info .comics-info-top .comics-info .comics-price .price span {
   display: inline-block;
+}
+main #comics .info .comics-info-top .comics-info .comics-price .price span:nth-child(2) {
+  text-transform: uppercase;
+  color: #bafd9c;
+}
+main #comics .info .comics-info-top .comics-info .comics-price .availability {
+  border-left: 1px solid #357739;
+  display: block;
+  padding: 17px 25px 13px;
+}
+main #comics .info .comics-info-top .comics-info p {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 23px;
+  padding-top: 12px;
+  color: #555;
 }
 main #comics .info .comics-info-top .adv {
   display: flex;

@@ -32,12 +32,12 @@
                             <div class="comics-price">
                                 <!-- sx: price info -->
                                 <div class="price">
-                                    <span>{{ $current_comics['price'] }}</span>
+                                    <span>U.S. Price: {{ $current_comics['price'] }}</span>
                                     <span>Available</span>
                                 </div>
 
                                 <!-- dx: availability menu -->
-                                <div class="availability">
+                                <div class="availability dropdown">
                                     <span>Check availability</span>
                                 </div>
                             </div>
