@@ -56,7 +56,7 @@
                 <!-- btm: specification -->
                 <div class="comics-info-btm">
                     <div class="small-container">
-                        <!-- top: specification -->
+                        <!-- specification -->
                         <div class="comics-spec">
                             <ul>
                                 <!-- sx: submenu (writer, author) -->
@@ -159,9 +159,24 @@
 
                         <!-- btm: dc nav product && service -->
                         <nav class="nav-services">
-                            <div class="service-card">
-
-                            </div>
+                            <ul>
+                                <li class="service-card">
+                                    <span>Digital comics</span>
+                                    <div class="logo"></div>
+                                </li>
+                                <li class="service-card">
+                                    <span>Shop DC</span>
+                                    <div class="logo"></div>
+                                </li>
+                                <li class="service-card">
+                                    <span>Comic shop locator</span>
+                                    <div class="logo"></div>
+                                </li>
+                                <li class="service-card">
+                                    <span>Subscriptions</span>
+                                    <div class="logo"></div>
+                                </li>
+                            </ul>
                         </nav>
                     </div>
                 </div>

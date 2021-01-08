@@ -6532,6 +6532,77 @@ main #comics .info .comics-info-btm .comics-spec .submenu-item .submenu-list li 
 main #comics .info .comics-info-btm .comics-spec .submenu-item .submenu-list li span:nth-child(2) a:hover {
   color: #77daf5;
 }
+main #comics .info .comics-info-btm .nav-services {
+  padding-top: 100px;
+  position: relative;
+}
+main #comics .info .comics-info-btm .nav-services::before {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #e3e3e3;
+}
+main #comics .info .comics-info-btm .nav-services ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+main #comics .info .comics-info-btm .nav-services ul .service-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: calc(100% / 4);
+  height: 66px;
+  padding: 15px;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #e3e3e3;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed", sans-serif;
+  cursor: pointer;
+  color: #9f9f9f;
+}
+main #comics .info .comics-info-btm .nav-services ul .service-card:hover {
+  color: #012d41;
+}
+main #comics .info .comics-info-btm .nav-services ul .service-card .logo {
+  width: 37px;
+  height: 37px;
+  background-image: url("/images/cta-icons.png");
+}
+main #comics .info .comics-info-btm .nav-services ul .service-card:nth-child(1) .logo {
+  background-position: 0px 0;
+}
+main #comics .info .comics-info-btm .nav-services ul .service-card:nth-child(1):hover .logo {
+  background-position: 0px 37px;
+}
+main #comics .info .comics-info-btm .nav-services ul .service-card:nth-child(2) .logo {
+  background-position: 37px 0;
+}
+main #comics .info .comics-info-btm .nav-services ul .service-card:nth-child(2):hover .logo {
+  background-position: 37px 37px;
+}
+main #comics .info .comics-info-btm .nav-services ul .service-card:nth-child(3) .logo {
+  background-position: 74px 0;
+}
+main #comics .info .comics-info-btm .nav-services ul .service-card:nth-child(3):hover .logo {
+  background-position: 74px 37px;
+}
+main #comics .info .comics-info-btm .nav-services ul .service-card:nth-child(4) .logo {
+  background-position: 111px 0;
+}
+main #comics .info .comics-info-btm .nav-services ul .service-card:nth-child(4):hover .logo {
+  background-position: 111px 37px;
+}
+
 footer {
   background-image: url("/images/footer-bg.jpg");
   color: #959595;

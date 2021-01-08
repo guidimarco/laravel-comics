@@ -242,14 +242,59 @@ main {
                                         color: #77daf5;
                                     }
                                 }
-                            }
-                        }
-                    }
-                }
+                            } // li
+                        } // submenu list
+                    } // submenu item
+                } // comics info bottom
 
                 // btm: dc product and service (nav)
                 .nav-services {
+                    padding-top: $spacing * 10;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        height: 1px;
+                        position: absolute;
+                        left: 0; right: 0;
+                        background-color: #e3e3e3;
+                    }
 
+                    ul {
+                        @include flexbox;
+
+                        .service-card {
+                            @include flexbox(row, space-around);
+                            width: calc(100% / 4);
+                            height: 66px;
+                            padding: $spacing * 1.5;
+                            border-left: 1px solid #fff;
+                            border-top: 1px solid #fff;
+                            border-right: 1px solid $comicsBor;
+                            font-size: $fontSize* 1.2;
+                            text-transform: uppercase;
+                            font-family: $fontFamilyCond;
+                            cursor: pointer;
+                            color: #9f9f9f;
+                            &:hover {
+                                color: #012d41;;
+                            }
+                            .logo {
+                                width: $secComicsLogo;
+                                height: $secComicsLogo;
+                                background-image: url('/images/cta-icons.png');
+                            }
+                            // for -> every
+                            @for $i from 1 through 4 {
+                                &:nth-child(#{$i}) .logo {
+                                    background-position: ($i - 1) * $secComicsLogo 0;
+                                }
+                                &:nth-child(#{$i}):hover .logo {
+                                    background-position: ($i - 1) * $secComicsLogo $secComicsLogo;
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
