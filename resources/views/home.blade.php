@@ -11,10 +11,10 @@
 
                 <!-- container of comics -->
                 <div class="comics-container">
-                    @foreach ($comics as $current_comics)
+                    @foreach ($comics as $key => $current_comics)
                         <!-- single comics card -->
                         <div class="comics-card">
-                            <a href="#">
+                            <a href="{{ route('comics', ['id' => $key]) }}">
                                 <img src="{{ $current_comics['thumb'] }}" alt="comics {{ $current_comics['title'] }}">
                                 <h3>{{ $current_comics['series'] }}</h3>
                             </a>
