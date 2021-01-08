@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', strtoupper($current_comics['title']) . " | DC")
+
 @section('main-content')
     <main>
         @include('partials.jumbotron')
