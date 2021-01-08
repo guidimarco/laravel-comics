@@ -6602,6 +6602,21 @@ main #comics .info .comics-info-btm .nav-services ul .service-card:nth-child(4) 
 main #comics .info .comics-info-btm .nav-services ul .service-card:nth-child(4):hover .logo {
   background-position: 111px 37px;
 }
+main #error-msg {
+  padding: 100px 0;
+}
+main #error-msg h1 {
+  line-height: 1.3em;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #003f5e;
+  text-transform: uppercase;
+}
+main #error-msg .btn {
+  display: block;
+  max-width: 200px;
+  text-align: center;
+  margin: auto;
+}
 
 footer {
   background-image: url("/images/footer-bg.jpg");

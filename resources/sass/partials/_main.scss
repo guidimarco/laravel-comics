@@ -300,4 +300,20 @@ main {
 
         } // end info
     }
+
+    #error-msg {
+        padding: $spacing * 10 0;
+        h1 {
+            line-height: 1.3em;
+            font-family: $fontFamilyCond;
+            color: $primaryTitCol;
+            text-transform: uppercase;
+        }
+        .btn {
+            display: block;
+            max-width: 200px;
+            text-align: center;
+            margin: auto;
+        }
+    }
 } // end main
