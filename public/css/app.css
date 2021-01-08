@@ -6405,6 +6405,40 @@ main #comics .cover .img-container span:nth-child(2) {
   right: 0;
   background: #00a9d9;
 }
+main #comics .info .comics-info-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+main #comics .info .comics-info-top .comics-info .comics-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+main #comics .info .comics-info-top .comics-info .comics-price .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+main #comics .info .comics-info-top .comics-info .comics-price .price span {
+  display: inline-block;
+}
+main #comics .info .comics-info-top .adv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: calc(100% / 3);
+  flex-shrink: 0;
+}
 footer {
   background-image: url("/images/footer-bg.jpg");
   color: #959595;

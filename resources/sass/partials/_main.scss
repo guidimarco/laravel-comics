@@ -114,6 +114,46 @@ main {
 
         // btm: all info (+ title + descr + ...)
         .info {
+            // top: title && description
+            .comics-info-top {
+                @include flexbox;
+
+                // sx: comics info
+                .comics-info {
+                    // top: title
+
+                    // price bar
+                    .comics-price {
+                        @include flexbox;
+                        .price {
+                            @include flexbox(row, space-between);
+                            flex-grow: 1;
+
+                            span {
+                                display: inline-block;
+                            }
+                        }
+                        .availability {
+
+                        }
+                    }
+
+                    // btm: description
+
+                } // end comics info
+
+                // dx: advertise
+                .adv {
+                    @include flexbox;
+                    width: calc(100% / 3);
+                    flex-shrink: 0;
+                }
+            }
+
+            // btm: spec
+            .comics-info-btm {
+
+            }
 
         } // end info
     }

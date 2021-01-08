@@ -21,8 +21,39 @@
 
             <div class="info">
                 <div class="small-container">
-                    <h1>{{ $current_comics['title'] }}</h1>
+                    <!-- top: title && descript -->
+                    <div class="comics-info-top">
+                        <!-- sx: info -->
+                        <div class="comics-info">
+                            <h1>{{ $current_comics['title'] }}</h1>
 
+                            <div class="comics-price">
+                                <!-- sx: price info -->
+                                <div class="price">
+                                    <span>{{ $current_comics['price'] }}</span>
+                                    <span>Available</span>
+                                </div>
+
+                                <!-- dx: availability menu -->
+                                <div class="availability">
+                                    <span>Check availability</span>
+                                </div>
+                            </div>
+
+                            <p>{{ $current_comics['description'] }}</p>
+
+                        </div>
+
+                        <!-- dx: advertise -->
+                        <div class="adv">
+                            <img src="{{ asset('/adv.jpg') }}" alt="advertise img">
+                        </div>
+                    </div><!-- end comics info top -->
+
+                    <!-- btm: specification -->
+                    <div class="comics-info-btm">
+
+                    </div>
                 </div>
             </div>
         </section>
