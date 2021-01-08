@@ -83,6 +83,15 @@ main {
             color: $primaryTitCol;
             text-transform: uppercase;
         }
+        h2 {
+            font-family: $fontFamilyCond;
+            color: $primaryTitCol;
+            font-size: $fontSize * 2.2;
+            font-weight: 300;
+            margin-bottom: .75em;
+            line-height: 1.2em;
+        }
+
         // top: cover-img
         .cover {
             height: 100px;
@@ -122,7 +131,10 @@ main {
         .info {
             // top: title && description
             .comics-info-top {
-                @include flexbox;
+                .small-container {
+                    @include flexbox;
+                    padding: $spacing * 5 0;
+                }
 
                 // sx: comics info
                 .comics-info {
@@ -162,7 +174,7 @@ main {
                         font-size: $fontSize * 1.4;
                         font-weight: bold;
                         line-height: $fontSize * 2.3;
-                        padding-top: $spacing * 1.2;
+                        padding-top: $spacing * 3;
                         color: #555;
                     }
 
@@ -178,7 +190,67 @@ main {
 
             // btm: spec
             .comics-info-btm {
+                background-color: $comicsBGsec;
+                color: $comicsCol;
+                font-family: $fontFamilyCond;
 
+                // top: comics specification
+                .comics-spec {
+                    padding: $spacing * 4 0;
+
+                    & > ul {
+                        @include clearfix;
+                        width: 100%;
+                        margin: 0 -$spacing;
+                    }
+
+                    .submenu-item {
+                        width: calc(50% - #{$spacing} * 2);
+                        float: left;
+                        margin: 0 $spacing;
+
+                        h2 {
+                            border-bottom: 1px solid $comicsBor;
+                            margin: 0;
+                            padding-bottom: 0.75em;
+                        }
+                        .submenu-list {
+                            li {
+                                display: flex;
+                                border-bottom: 1px solid $comicsBor;
+                                border-top: 1px solid #fff;
+                                align-items: flex-start;
+                                padding: $spacing 0;
+
+                                // first-span -> name of submenu
+                                .submenu-name {
+                                    width: 140px;
+                                    flex-shrink: 0;
+                                    color: $comicsTitCol;
+                                }
+
+                                // second-span -> info
+                                span:nth-child(2) {
+                                    flex-grow: 1;
+                                    font-family: $fontFamily;
+                                    font-size: $fontSize * 1.4;
+
+                                    & a {
+                                        color: $brandPr;
+                                    }
+                                    & a:hover {
+                                        color: #77daf5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // btm: dc product and service (nav)
+                .nav-services {
+
+                }
             }
 
         } // end info

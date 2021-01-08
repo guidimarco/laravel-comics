@@ -22,9 +22,9 @@
             </div>
 
             <div class="info">
-                <div class="small-container">
-                    <!-- top: title && descript -->
-                    <div class="comics-info-top">
+                <!-- top: title && descript -->
+                <div class="comics-info-top">
+                    <div class="small-container">
                         <!-- sx: info -->
                         <div class="comics-info">
                             <h1>{{ $current_comics['title'] }}</h1>
@@ -47,14 +47,122 @@
                         </div>
 
                         <!-- dx: advertise -->
-                        <div class="adv">
+                        <aside class="adv">
                             <img src="{{ asset('/adv.jpg') }}" alt="advertise img">
+                        </aside>
+                    </div><!-- end small-container -->
+                </div><!-- end comics info top -->
+
+                <!-- btm: specification -->
+                <div class="comics-info-btm">
+                    <div class="small-container">
+                        <!-- top: specification -->
+                        <div class="comics-spec">
+                            <ul>
+                                <!-- sx: submenu (writer, author) -->
+                                <li class="submenu-item">
+                                    <h2>Talent</h2>
+                                    <ul class="submenu-list">
+                                        <li>
+                                            <span class="submenu-name">
+                                                Art by:
+                                            </span>
+                                            <span>
+                                                @foreach ($current_comics['artists'] as $artist)
+                                                    <a href="#">
+                                                        {{ $artist }}
+                                                    </a>{{ $loop -> last ? '' : ','}}
+                                                @endforeach
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="submenu-name">
+                                                Written by:
+                                            </span>
+                                            <span>
+                                                @foreach ($current_comics['writers'] as $writer)
+                                                    <a href="#">
+                                                        {{ $writer }}
+                                                    </a>{{ $loop -> last ? '' : ','}}
+                                                @endforeach
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- dx: submenu other info -->
+                                <li class="submenu-item">
+                                    <h2>Specs</h2>
+                                    <ul class="submenu-list">
+                                        <li>
+                                            <span class="submenu-name">
+                                                Series:
+                                            </span>
+                                            <span>
+                                                <a href="#">
+                                                    {{ $current_comics['series'] }}
+                                                </a>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="submenu-name">
+                                                U.S. Price:
+                                            </span>
+                                            <span>
+                                                {{ $current_comics['price'] }}
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="submenu-name">
+                                                On Sale Date:
+                                            </span>
+                                            <span>
+                                                {{ $current_comics['sale_date'] }}
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="submenu-name">
+                                                Volume/Issue #:
+                                            </span>
+                                            <span>
+                                                1
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="submenu-name">
+                                                Trim Size:
+                                            </span>
+                                            <span>
+                                                6 5/8 x 10 3/16
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="submenu-name">
+                                                Page Count:
+                                            </span>
+                                            <span>
+                                                32
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="submenu-name">
+                                                Rated:
+                                            </span>
+                                            <span>
+                                                Mature
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
-                    </div><!-- end comics info top -->
 
-                    <!-- btm: specification -->
-                    <div class="comics-info-btm">
+                        <!-- btm: dc nav product && service -->
+                        <nav class="nav-services">
+                            <div class="service-card">
 
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>

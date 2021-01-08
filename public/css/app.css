@@ -6387,6 +6387,14 @@ main #comics h1 {
   color: #003f5e;
   text-transform: uppercase;
 }
+main #comics h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #003f5e;
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 0.75em;
+  line-height: 1.2em;
+}
 main #comics .cover {
   height: 100px;
   background-color: #00a9d9;
@@ -6419,12 +6427,13 @@ main #comics .cover .img-container span:nth-child(2) {
   right: 0;
   background: #00a9d9;
 }
-main #comics .info .comics-info-top {
+main #comics .info .comics-info-top .small-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  padding: 50px 0;
 }
 main #comics .info .comics-info-top .comics-info .comics-price {
   display: flex;
@@ -6463,7 +6472,7 @@ main #comics .info .comics-info-top .comics-info p {
   font-size: 14px;
   font-weight: bold;
   line-height: 23px;
-  padding-top: 12px;
+  padding-top: 30px;
   color: #555;
 }
 main #comics .info .comics-info-top .adv {
@@ -6474,6 +6483,54 @@ main #comics .info .comics-info-top .adv {
   flex-wrap: nowrap;
   width: calc(100% / 3);
   flex-shrink: 0;
+}
+main #comics .info .comics-info-btm {
+  background-color: #f6f6f6;
+  color: #3f3f3f;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+main #comics .info .comics-info-btm .comics-spec {
+  padding: 40px 0;
+}
+main #comics .info .comics-info-btm .comics-spec > ul {
+  display: table;
+  clear: both;
+  content: "";
+  width: 100%;
+  margin: -10px;
+}
+main #comics .info .comics-info-btm .comics-spec .submenu-item {
+  width: calc(50% - 10px * 2);
+  float: left;
+  margin: 0 10px;
+}
+main #comics .info .comics-info-btm .comics-spec .submenu-item h2 {
+  border-bottom: 1px solid #e3e3e3;
+  margin: 0;
+  padding-bottom: 0.75em;
+}
+main #comics .info .comics-info-btm .comics-spec .submenu-item .submenu-list li {
+  display: flex;
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #fff;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+main #comics .info .comics-info-btm .comics-spec .submenu-item .submenu-list li .submenu-name {
+  width: 140px;
+  flex-shrink: 0;
+  color: #003f5e;
+}
+main #comics .info .comics-info-btm .comics-spec .submenu-item .submenu-list li span:nth-child(2) {
+  flex-grow: 1;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+main #comics .info .comics-info-btm .comics-spec .submenu-item .submenu-list li span:nth-child(2) a {
+  color: #00a9d9;
+}
+main #comics .info .comics-info-btm .comics-spec .submenu-item .submenu-list li span:nth-child(2) a:hover {
+  color: #77daf5;
 }
 footer {
   background-image: url("/images/footer-bg.jpg");
