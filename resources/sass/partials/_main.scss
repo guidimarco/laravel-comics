@@ -75,4 +75,46 @@ main {
             }
         }
     }
+
+    #comics {
+        // top: cover-img
+        .cover {
+            height: 100px;
+            background-color: $brandPr;
+            position: relative;
+
+            .img-container {
+                position: absolute;
+                bottom: 20px;
+                border: 1px solid $brandPrCol;
+                img {
+                    display: block;
+                }
+                span {
+                    position: absolute;
+                    line-height: $fontSize * 2.2;
+                    font-size: $fontSize * 1.4;
+                    font-weight: bold;
+                    padding: 0 $spacing;
+                    text-transform: uppercase;
+                    color: $brandPrCol;
+                    text-align: center;
+                }
+                span:nth-child(1) {
+                    background: rgba(0,102,170,.9);
+                }
+                span:nth-child(2) {
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: #00a9d9;
+                }
+            }
+        } // end cover
+
+        // btm: all info (+ title + descr + ...)
+        .info {
+
+        } // end info
+    }
 } // end main

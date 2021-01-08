@@ -6144,6 +6144,12 @@ body {
   margin: 0 auto;
 }
 
+.small-container {
+  width: 80%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
 ul {
   list-style-type: none;
 }
@@ -6367,7 +6373,38 @@ main #info-nav ul li span {
   display: inline-block;
   line-height: 55px;
 }
-
+main #comics .cover {
+  height: 100px;
+  background-color: #00a9d9;
+  position: relative;
+}
+main #comics .cover .img-container {
+  position: absolute;
+  bottom: 20px;
+  border: 1px solid #fff;
+}
+main #comics .cover .img-container img {
+  display: block;
+}
+main #comics .cover .img-container span {
+  position: absolute;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 10px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+main #comics .cover .img-container span:nth-child(1) {
+  background: rgba(0, 102, 170, 0.9);
+}
+main #comics .cover .img-container span:nth-child(2) {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #00a9d9;
+}
 footer {
   background-image: url("/images/footer-bg.jpg");
   color: #959595;
