@@ -117,7 +117,7 @@
                                                 On Sale Date:
                                             </span>
                                             <span>
-                                                {{ $current_comics['sale_date'] }}
+                                                {{ date_format(date_create_from_format('Y-m-d', $current_comics['sale_date']), 'd-m-Y') }}
                                             </span>
                                         </li>
                                         <li>
