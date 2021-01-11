@@ -48,7 +48,7 @@
 
                         <!-- dx: advertise -->
                         <aside class="adv">
-                            <img src="{{ asset('/images/adv.jpg') }}" alt="advertise img">
+                            <img src="{{ asset('images/adv.jpg') }}" alt="advertise img">
                         </aside>
                     </div><!-- end small-container -->
                 </div><!-- end comics info top -->
